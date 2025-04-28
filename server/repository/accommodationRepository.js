@@ -1,5 +1,5 @@
 import axios from "axios";
-import { areaCodeMap, sigunguCodeMap, accommodationTypeMap } from "../../client/src/filtersData.js";
+import { areaCodeMap, sigunguCodeMap, accommodationTypeMap } from "../filtersData.js";
 
 
 const API_KEY = 'C2+Cvn1jcs6wPY5EXyqceu3WXDRT6iw/MiF1tmdof4869K0FRiH58/LPkqMRyZm2l4Gb/sJqE8CoeMLYQ2vgNg==';
