@@ -3,7 +3,14 @@ import { getAccommodationOrdersByUserId } from "../repository/accOrderRepository
 
 export const handleChatMessage = async (req, res) => {
   try {
-    const { message, userId } = req.body;
+    const { message, userId, isInitial } = req.body;
+
+    // 초기 메시지인 경우
+    if (isInitial) {
+      return res.json({ 
+        message: "안녕하세요! 저는 놀다봇입니다. 예약 관련해서 물어보세요! 😊"
+      });
+    }
 
     if (!userId) {
       return res.status(400).json({ 
