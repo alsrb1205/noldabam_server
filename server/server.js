@@ -24,7 +24,7 @@ const port = 9000;
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 server.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'http://noldabam.s3-website.ap-northeast-2.amazonaws.com',
   credentials: true
 }));
 server.use("/upload_files", express.static(path.join(process.cwd(), "upload_files"))); //저장폴더 연결

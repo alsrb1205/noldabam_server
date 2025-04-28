@@ -19,9 +19,9 @@ export const paymentKakaopay = async (req, res) => {
                 quantity: 1,
                 total_amount,
                 tax_free_amount: 0,
-                approval_url: "http://localhost:3000/payment/complete",
-                cancel_url: "http://localhost:3000/payment/cancel",
-                fail_url: "http://localhost:3000/payment/fail",
+                approval_url: "http://noldabam.s3-website.ap-northeast-2.amazonaws.com/payment/complete",
+                cancel_url: "http://noldabam.s3-website.ap-northeast-2.amazonaws.com/payment/cancel",
+                fail_url: "http://noldabam.s3-website.ap-northeast-2.amazonaws.com/payment/fail",
             },
             {
                 headers: {

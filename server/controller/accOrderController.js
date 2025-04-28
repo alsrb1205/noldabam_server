@@ -45,9 +45,9 @@ export const accommodationOrder = async (req, res) => {
             quantity: 1,
             total_amount: formData.price,
             tax_free_amount: 0,
-            approval_url: `http://localhost:3000/payment/success?order_id=${order_id}`,
-            fail_url: 'http://localhost:3000/payment/fail',
-            cancel_url: 'http://localhost:3000/payment/cancel'
+            approval_url: `http://noldabam.s3-website.ap-northeast-2.amazonaws.com/payment/success?order_id=${order_id}`,
+            fail_url: 'http://noldabam.s3-website.ap-northeast-2.amazonaws.com/payment/fail',
+            cancel_url: 'http://noldabam.s3-website.ap-northeast-2.amazonaws.com/payment/cancel'
           }).toString(),
           {
             headers: {
