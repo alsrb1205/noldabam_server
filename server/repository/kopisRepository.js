@@ -13,7 +13,7 @@ export const fetchKopisSearch = async ({ location, type, keyword }) => {
   const shprfnm = keyword;
 
   // 기본 URL 구성
-  let baseUrl = `http://www.kopis.or.kr/openApi/restful/pblprfr?service=${process.env.KOPIS_KEY}&cpage=1&rows=100&stdate=${start}&eddate=${end}&prfstate=01&prfstate=02`;
+  let baseUrl = `http://www.kopis.or.kr/openApi/restful/pblprfr?service=${process.env.KOPIS_KEY}&cpage=1&rows=100&stdate=${start}&eddate=${end}&prfstate=01`;
   
   // 지역 검색과 키워드 검색은 서로 배타적
   if (signgucode) {
