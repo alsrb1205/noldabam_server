@@ -29,6 +29,7 @@ export const fetchKopisSearch = async ({ location, type, keyword }) => {
 
   try {
     console.log("[KOPIS] API 요청 시작");
+    console.log("[KOPIS] 요청 URL:", apiUrl);
     const response = await axios.get(apiUrl, { responseType: "text" });
     
     const parser = new XMLParser();
